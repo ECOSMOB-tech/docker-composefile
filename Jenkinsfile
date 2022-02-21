@@ -1,6 +1,6 @@
 node{
   stage('git checkout'){
-    git url:'', branch:'main'
+    git url: 'https://github.com/ECOSMOB-tech/docker-composefile.git', branch: 'main'
   }
   stage('connecting another server'){
     sshagent(['Docker_Dev_Server_SSH']) {
